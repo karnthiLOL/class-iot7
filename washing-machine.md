@@ -5,35 +5,50 @@
 Topic: v1/hw/get/6310301027/model-01/WSH-SN001
 Payload: {
     "action"    : "get",
-    "project"   : "washing-01",
+    "project"   : "6310301027",
     "model"     : "model-01",
-    "serial"    : "WSH-SN01",
+    "serial"    : "SN-001",
     "name"      : "wash_count",
-    "value"     : "114"
+    "value"     : "10"
 }
 ```
 
 ## Get firmware version
 ```
-Topic: v1/
+Topic: v1/hw/get/6310301027/model-01/WSH-SN001
 Payload: {
-
+    "action"    : "get",
+    "project"   : "6310301027",
+    "model"     : "model-01",
+    "serial"    : "SN-001",
+    "name"      : "firmware",
+    "value"     : "01"
 }
 ```
 
 ## Get manufacture id and geo-location or location placement
 ```
-Topic: v1/
+Topic: v1/hw/get/6310301027/model-01/WSH-SN001
 Payload: {
-
+    "action"    : "get",
+    "project"   : "6310301027",
+    "model"     : "model-01",
+    "serial"    : "SN-001",
+    "name"      : "location placement",
+    "value"     : "phuket"
 }
 ```
 
 ## Set geo-location or location placement
 ```
-Topic: v1/
+Topic: v1/hw/get/6310301027/model-01/WSH-SN001
 Payload: {
-
+    "action"    : "get",
+    "project"   : "6310301027",
+    "model"     : "model-01",
+    "serial"    : "SN-001",
+    "name"      : "location placement",
+    "value"     : "phuket"
 }
 ```
 
