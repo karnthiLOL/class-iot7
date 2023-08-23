@@ -2,7 +2,7 @@
 
 ## Get hardware level operations e.g. wash_count
 ```
-Topic: v1/hw/get/6310301027/model-01/WSH-SN001
+Topic: v1cdti/hw/get/6310301027/model-01/WSH-SN001
 Payload: {
     "action"    : "get",
     "project"   : "6310301027",
@@ -15,7 +15,7 @@ Payload: {
 
 ## Get firmware version
 ```
-Topic: v1/hw/get/6310301027/model-01/WSH-SN001
+Topic: v1cdti/hw/get/6310301027/model-01/WSH-SN001
 Payload: {
     "action"    : "get",
     "project"   : "6310301027",
@@ -28,7 +28,7 @@ Payload: {
 
 ## Get manufacture id and geo-location or location placement
 ```
-Topic: v1/hw/get/6310301027/model-01/WSH-SN001
+Topic: v1cdti/hw/get/6310301027/model-01/WSH-SN001
 Payload: {
     "action"    : "get",
     "project"   : "6310301027",
@@ -41,9 +41,9 @@ Payload: {
 
 ## Set geo-location or location placement
 ```
-Topic: v1/hw/get/6310301027/model-01/WSH-SN001
+Topic: v1cdti/hw/set/6310301027/model-01/WSH-SN001
 Payload: {
-    "action"    : "get",
+    "action"    : "set",
     "project"   : "6310301027",
     "model"     : "model-01",
     "serial"    : "SN-001",
@@ -54,16 +54,26 @@ Payload: {
 
 ## Monitor machine sensor
 ```
-Topic: v1/
+Topic: v1cdti/hw/monitor/6310301027/model-01/WSH-SN001
 Payload: {
-
+    "action"    : "monitor",
+    "project"   : "6310301027",
+    "model"     : "model-01",
+    "serial"    : "SN-001",
+    "name"      : "rotage round",
+    "value"     : "2000"
 }
 ```
 
 ## Set machie status to "maint" to indicate this machine need to be maintenance.
 ```
-Topic: v1/
+Topic: v1cdti/hw/set/6310301027/model-01/WSH-SN001
 Payload: {
-
+    "action"    : "monitor",
+    "project"   : "6310301027",
+    "model"     : "model-01",
+    "serial"    : "SN-001",
+    "name"      : "status",
+    "value"     : "maint"
 }
 ```
